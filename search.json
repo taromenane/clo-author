@@ -399,18 +399,18 @@
     "text": "Domain Profile\nThe domain profile (.claude/references/domain-profile.md) calibrates all agents to your field. Agents read their discipline from this file; the default is economics if not specified. Fill it in manually or use /discover (interactive interview) to populate it:\n\nField & adjacent subfields — inferred from your topic\nTarget journals — ranked by tier\nCommon data sources — datasets typical for your area\nCommon identification strategies — designs used in your literature\nField conventions — estimation quirks, clustering norms\nSeminal references — papers every referee expects you to cite\nReferee concerns — the “gotcha” questions referees always ask"
   },
   {
-    "objectID": "user-guide.html#automatic-upgrade-3.x-future-versions",
-    "href": "user-guide.html#automatic-upgrade-3.x-future-versions",
+    "objectID": "user-guide.html#how-to-upgrade-2.x-3.0",
+    "href": "user-guide.html#how-to-upgrade-2.x-3.0",
     "title": "User Guide",
-    "section": "Automatic Upgrade (3.x → future versions)",
-    "text": "Automatic Upgrade (3.x → future versions)\nRun /tools upgrade inside your project. It fetches the latest infrastructure, replaces .claude/, preserves your content, and reports what changed.\n\n\n\n\n\n\nWarning\n\n\n\n/tools upgrade does not work for 2.x → 3.0 because 2.x doesn’t have the /tools skill. Use the manual upgrade below."
+    "section": "How to Upgrade (2.x → 3.0)",
+    "text": "How to Upgrade (2.x → 3.0)\n\nDownload the latest release or clone clo-author 3.0 into a temporary folder\nDelete your old .claude/ directory\nCopy the new .claude/ into your project\nDone — your paper, scripts, data, CLAUDE.md, bibliography are all untouched\n\nThat’s it. No git merge, no upstream remote, no conflicts. The infrastructure is entirely inside .claude/; your research content lives in separate directories that clo-author never touches.\nOptional: also copy the new templates/ directory if you want updated templates.\nYour CLAUDE.md stays yours. You already customized it with your project name, institution, field, and folder paths. Don’t overwrite it — the 3.0 infrastructure reads whatever paths you have there."
   },
   {
-    "objectID": "user-guide.html#manual-upgrade-2.x-3.0",
-    "href": "user-guide.html#manual-upgrade-2.x-3.0",
+    "objectID": "user-guide.html#future-upgrades-3.x-4.0",
+    "href": "user-guide.html#future-upgrades-3.x-4.0",
     "title": "User Guide",
-    "section": "Manual Upgrade (2.x → 3.0)",
-    "text": "Manual Upgrade (2.x → 3.0)\n\n\n\n\n\n\nNote\n\n\n\nYour files are safe. The upgrade only touches the .claude/ directory (infrastructure). Your paper, scripts, data, bibliography, and all research content are never modified or deleted.\n\n\n\nBack up: git stash any uncommitted work\nAdd upstream: git remote add upstream https://github.com/hugosantanna/clo-author.git\nCopy infrastructure: replace your .claude/ and templates/ with the 3.0 versions from upstream\nKeep your content: don’t rename folders that already have files in them — if your paper is in Paper/ not paper/, that’s fine\nUpdate CLAUDE.md: adjust the folder structure section and compilation commands to match your actual layout"
+    "section": "Future Upgrades (3.x → 4.0+)",
+    "text": "Future Upgrades (3.x → 4.0+)\nOnce you’re on 3.0, run /tools upgrade for future versions. It automates the same process: replace .claude/, preserve your content, report what changed."
   },
   {
     "objectID": "user-guide.html#what-changed-in-3.0",

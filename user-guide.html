@@ -233,8 +233,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#sec-upgrading" id="toc-sec-upgrading" class="nav-link" data-scroll-target="#sec-upgrading">Upgrading from 2.x</a>
   <ul class="collapse">
-  <li><a href="#automatic-upgrade-3.x-future-versions" id="toc-automatic-upgrade-3.x-future-versions" class="nav-link" data-scroll-target="#automatic-upgrade-3.x-future-versions">Automatic Upgrade (3.x → future versions)</a></li>
-  <li><a href="#manual-upgrade-2.x-3.0" id="toc-manual-upgrade-2.x-3.0" class="nav-link" data-scroll-target="#manual-upgrade-2.x-3.0">Manual Upgrade (2.x → 3.0)</a></li>
+  <li><a href="#how-to-upgrade-2.x-3.0" id="toc-how-to-upgrade-2.x-3.0" class="nav-link" data-scroll-target="#how-to-upgrade-2.x-3.0">How to Upgrade (2.x → 3.0)</a></li>
+  <li><a href="#future-upgrades-3.x-4.0" id="toc-future-upgrades-3.x-4.0" class="nav-link" data-scroll-target="#future-upgrades-3.x-4.0">Future Upgrades (3.x → 4.0+)</a></li>
   <li><a href="#what-changed-in-3.0" id="toc-what-changed-in-3.0" class="nav-link" data-scroll-target="#what-changed-in-3.0">What Changed in 3.0</a></li>
   <li><a href="#sec-create-skills" id="toc-sec-create-skills" class="nav-link" data-scroll-target="#sec-create-skills">Creating Custom Skills</a></li>
   </ul></li>
@@ -759,25 +759,6 @@ Phase 5: Submission
 <section id="sec-upgrading" class="level1">
 <h1>Upgrading from 2.x</h1>
 <p>If you have an existing project using clo-author 2.x, you can upgrade to 3.0 without losing any of your work.</p>
-<section id="automatic-upgrade-3.x-future-versions" class="level2">
-<h2 class="anchored" data-anchor-id="automatic-upgrade-3.x-future-versions">Automatic Upgrade (3.x → future versions)</h2>
-<p>Run <code>/tools upgrade</code> inside your project. It fetches the latest infrastructure, replaces <code>.claude/</code>, preserves your content, and reports what changed.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><code>/tools upgrade</code> does <strong>not</strong> work for 2.x → 3.0 because 2.x doesn’t have the <code>/tools</code> skill. Use the manual upgrade below.</p>
-</div>
-</div>
-</section>
-<section id="manual-upgrade-2.x-3.0" class="level2">
-<h2 class="anchored" data-anchor-id="manual-upgrade-2.x-3.0">Manual Upgrade (2.x → 3.0)</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -788,16 +769,24 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Your files are safe.</strong> The upgrade only touches the <code>.claude/</code> directory (infrastructure). Your paper, scripts, data, bibliography, and all research content are never modified or deleted.</p>
+<p><strong>Your files are safe.</strong> The upgrade only touches <code>.claude/</code> (the infrastructure). Your paper, scripts, data, bibliography, and all research content are never modified or deleted. Don’t use <code>git merge</code> — it creates unnecessary conflicts on files you’ve already customized (CLAUDE.md, README, etc.).</p>
 </div>
 </div>
+<section id="how-to-upgrade-2.x-3.0" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-upgrade-2.x-3.0">How to Upgrade (2.x → 3.0)</h2>
 <ol type="1">
-<li><strong>Back up:</strong> <code>git stash</code> any uncommitted work</li>
-<li><strong>Add upstream:</strong> <code>git remote add upstream https://github.com/hugosantanna/clo-author.git</code></li>
-<li><strong>Copy infrastructure:</strong> replace your <code>.claude/</code> and <code>templates/</code> with the 3.0 versions from upstream</li>
-<li><strong>Keep your content:</strong> don’t rename folders that already have files in them — if your paper is in <code>Paper/</code> not <code>paper/</code>, that’s fine</li>
-<li><strong>Update CLAUDE.md:</strong> adjust the folder structure section and compilation commands to match your actual layout</li>
+<li><strong>Download</strong> the <a href="https://github.com/hugosantanna/clo-author/releases">latest release</a> or clone clo-author 3.0 into a temporary folder</li>
+<li><strong>Delete</strong> your old <code>.claude/</code> directory</li>
+<li><strong>Copy</strong> the new <code>.claude/</code> into your project</li>
+<li><strong>Done</strong> — your paper, scripts, data, CLAUDE.md, bibliography are all untouched</li>
 </ol>
+<p>That’s it. No git merge, no upstream remote, no conflicts. The infrastructure is entirely inside <code>.claude/</code>; your research content lives in separate directories that clo-author never touches.</p>
+<p><strong>Optional:</strong> also copy the new <code>templates/</code> directory if you want updated templates.</p>
+<p><strong>Your CLAUDE.md stays yours.</strong> You already customized it with your project name, institution, field, and folder paths. Don’t overwrite it — the 3.0 infrastructure reads whatever paths you have there.</p>
+</section>
+<section id="future-upgrades-3.x-4.0" class="level2">
+<h2 class="anchored" data-anchor-id="future-upgrades-3.x-4.0">Future Upgrades (3.x → 4.0+)</h2>
+<p>Once you’re on 3.0, run <code>/tools upgrade</code> for future versions. It automates the same process: replace <code>.claude/</code>, preserve your content, report what changed.</p>
 </section>
 <section id="what-changed-in-3.0" class="level2">
 <h2 class="anchored" data-anchor-id="what-changed-in-3.0">What Changed in 3.0</h2>
