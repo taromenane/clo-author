@@ -5,9 +5,9 @@
      Keep this file under ~150 lines — Claude loads it every session.
      See the guide at https://hugosantanna.github.io/clo-author/ for full documentation. -->
 
-**Project:** [YOUR PROJECT NAME]
-**Institution:** [YOUR INSTITUTION]
-**Field:** [YOUR FIELD — e.g., Economics, Finance, Marketing, Management, Accounting]
+**Project:** Natural Resource Economics and Sustainable Development in Ecuador
+**Institution:** Universidad de Especialidades Espíritu Santo (UEES), Facultad de Emprendimiento, Negocios y Economía, Samborondón, Ecuador
+**Field:** Economics (Environmental / Natural Resource / Development)
 **Branch:** main
 
 ---
@@ -63,9 +63,9 @@
 ## Commands
 
 ```bash
-# Paper compilation (3-pass, XeLaTeX only)
+# Paper compilation (4-pass: xelatex → biber → xelatex → xelatex)
 cd paper && TEXINPUTS=preambles:$TEXINPUTS xelatex -interaction=nonstopmode main.tex
-BIBINPUTS=..:$BIBINPUTS bibtex main
+biber main
 TEXINPUTS=preambles:$TEXINPUTS xelatex -interaction=nonstopmode main.tex
 TEXINPUTS=preambles:$TEXINPUTS xelatex -interaction=nonstopmode main.tex
 
@@ -130,7 +130,7 @@ Output organization: by-script
 
 | Component | File | Status | Description |
 |-----------|------|--------|-------------|
-| Paper | `paper/main.tex` | [draft/submitted/R&R] | [Brief description] |
-| Data | `scripts/R/` | [complete/in-progress] | [Analysis description] |
-| Replication | `paper/replication/` | [not started/ready] | [Deposit status] |
-| Job Market Talk | `paper/talks/job_market_talk.tex` | -- | [Status] |
+| Paper | `paper/main.tex` | draft | Natural resource economics & sustainable development in Ecuador |
+| Data | `scripts/R/` | not started | No data acquired yet — pending /discover phase |
+| Replication | `paper/replication/` | not started | — |
+| Job Market Talk | `paper/talks/job_market_talk.tex` | not started | — |

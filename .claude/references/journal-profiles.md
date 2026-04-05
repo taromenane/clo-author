@@ -338,6 +338,58 @@ Each journal profile includes a **Referee pool** that weights which dispositions
 
 ---
 
+## Environmental, Natural Resource, and Development Economics
+
+### Journal of the Association of Environmental and Resource Economists (JAERE)
+**Focus:** Environmental and natural resource economics — pollution, climate, energy, conservation, land use, resource extraction
+**Bar:** Top field journal for environmental/resource economics. Clean causal identification applied to environmental questions. Must speak to both economists and environmental policy audience.
+**Domain referee adjusts:** Natural resource and environmental frameworks expected — externalities, public goods, common pool resources, optimal extraction. Conservation-development trade-offs. Welfare analysis. Distributional incidence of environmental policy. Expects knowledge of EPA/MAATE regulations and conservation program details.
+**Methods referee adjusts:** Quasi-experimental identification strongly preferred. Spatial designs common — boundary discontinuities, distance instruments, Conley SEs required. Staggered DiD with modern estimators. Satellite and remote sensing data (Hansen GFC, MODIS) accepted with validation discussion. Treatment of pollution/deforestation measurement error expected.
+**Typical concerns:** "Is this causal or correlational?" "What's the welfare implication?" "Have you addressed spatial spillovers?" "Does the instrument satisfy exclusion — no direct effect beyond the resource channel?"
+**Referee pool:** CREDIBILITY (high), POLICY (high), MEASUREMENT (medium), SKEPTIC (medium), STRUCTURAL (low), THEORY (low)
+
+### Journal of Environmental Economics and Management (JEEM)
+**Focus:** Environmental and natural resource economics — the flagship field journal (broader scope than JAERE)
+**Bar:** Rigorous environmental economics. Accepts structural, reduced-form, and theoretical work. Slightly lower bar than JAERE for purely applied work; higher tolerance for structural models.
+**Domain referee adjusts:** Broad environmental scope including pollution, water, forestry, fisheries, energy, climate. Cost-benefit analysis valued. Non-market valuation (hedonic pricing, contingent valuation, travel cost) common. Understanding of environmental regulation mechanisms.
+**Methods referee adjusts:** Structural models (dynamic resource extraction, computable general equilibrium for environmental policy) accepted and valued. Non-market valuation methods scrutinized for scope insensitivity, hypothetical bias. Quasi-experimental papers held to standard applied micro standards.
+**Typical concerns:** "Is willingness-to-pay scope-sensitive?" "Have you done cost-benefit?" "What's the optimal policy instrument?" "Structural vs. reduced-form: which is more credible here?"
+**Referee pool:** STRUCTURAL (high), POLICY (high), CREDIBILITY (medium), MEASUREMENT (medium), THEORY (medium), SKEPTIC (low)
+
+### Journal of Development Economics (JDE)
+**Focus:** Development economics — poverty, institutions, agriculture, trade, finance, health, and governance in developing countries
+**Bar:** Credible empirical evidence on development questions. Strong quasi-experimental designs or RCTs. Deep field knowledge of the country/context.
+**Domain referee adjusts:** Country/regional context matters enormously — deep institutional knowledge expected. External validity to other developing country settings. Cost-effectiveness. Gender and equity dimensions. Sustainability of effects. Understands LAC-specific challenges (extractivism, commodity dependence, informality).
+**Methods referee adjusts:** RCTs: randomization checks, attrition, compliance, spillovers, LATE vs ATE distinction. Quasi-experimental: strong first stage for IV, clean RD, credible parallel trends, modern staggered DiD. Power calculations. Clustered SEs at appropriate administrative level.
+**Typical concerns:** "Does this generalize beyond this specific context?" "What about attrition/selective compliance?" "Cost-effectiveness?" "Long-run effects?" "LATE vs policy-relevant estimand?"
+**Referee pool:** CREDIBILITY (high), POLICY (high), MEASUREMENT (high), SKEPTIC (medium), STRUCTURAL (low), THEORY (low)
+
+### World Development
+**Focus:** Interdisciplinary development studies — economics, political science, sociology, anthropology — with focus on poverty, inequality, governance, environment
+**Bar:** Solid empirical contribution to development knowledge with policy relevance. More accepting of descriptive and qualitative evidence than economics field journals. Strong institutional analysis valued.
+**Domain referee adjusts:** Interdisciplinary — must speak beyond economics. Institutional and political economy context very important. Community-level dynamics, indigenous rights, local governance. Extractivism and resource politics in LAC well-represented in the journal. Equity and distributional analysis front and center.
+**Methods referee adjusts:** Lower econometric bar than JAERE/JDE but rigor still expected. Descriptive statistics, diff-in-diff, and regression discontinuity all accepted. Mixed-methods (quantitative + qualitative) valued. Ethnographic evidence can complement econometrics.
+**Typical concerns:** "Who benefits and who loses?" "What are the political economy dynamics?" "Does this consider community agency and local institutions?" "What are the implications for sustainability?"
+**Referee pool:** POLICY (high), MEASUREMENT (medium), CREDIBILITY (medium), THEORY (medium), STRUCTURAL (low), SKEPTIC (low)
+
+### Ecological Economics
+**Focus:** Ecological-economic systems — natural capital, ecosystem services, sustainability, degrowth, biophysical limits, environmental valuation
+**Bar:** Interdisciplinary — accepts papers that integrate ecological and economic frameworks. Less wedded to causal identification than economics journals; more accepting of systems modeling, scenario analysis, and integrated assessment.
+**Domain referee adjusts:** Ecosystem services framework expected (provisioning, regulating, cultural). Natural capital accounting. Planetary boundaries and sustainability science. Degrowth and post-extractivist frameworks welcome. Strong overlap with conservation biology and environmental science.
+**Methods referee adjusts:** Diverse methods accepted: econometric, systems dynamics, input-output analysis, integrated assessment models, participatory methods. Causal identification not always required — descriptive natural capital accounts accepted. Sensitivity analysis expected for modeling assumptions.
+**Typical concerns:** "Have you quantified the ecosystem service tradeoffs?" "What about non-market values?" "Is this compatible with ecological constraints?" "What are the distributional justice implications?"
+**Referee pool:** MEASUREMENT (high), POLICY (high), THEORY (medium), STRUCTURAL (medium), CREDIBILITY (low), SKEPTIC (low)
+
+### Economía (LACEA Journal)
+**Focus:** Economic research focused on Latin America and the Caribbean — all fields
+**Bar:** Rigorous economics research on LAC topics. Top regional economics journal. Indexed and peer-reviewed. Good visibility in LAC policy and academic circles.
+**Domain referee adjusts:** LAC institutional context is an asset, not something to explain away. Regional data sources (SEDLAC, ECLAC, World Bank LAC) expected. Comparative LAC perspective valued. Policy relevance for the region essential.
+**Methods referee adjusts:** Same identification standards as AEJ:Applied. Modern estimators for DiD. Regional data constraints acknowledged but must be addressed with appropriate robustness checks.
+**Typical concerns:** "Does this apply across LAC countries or only Ecuador?" "Have you used the best available regional data?" "What's the policy implication for regional governments?"
+**Referee pool:** CREDIBILITY (high), POLICY (high), MEASUREMENT (medium), SKEPTIC (low), STRUCTURAL (low), THEORY (low)
+
+---
+
 ## Add Your Own Journal
 
 Copy this template and add it above this section:
